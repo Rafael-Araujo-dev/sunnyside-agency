@@ -1,0 +1,13 @@
+{
+    "paragraphSmall" : {
+        "fontSize": "",
+        "lineHeight": "",
+        "fontWeight": {
+            "lighter": "",
+            "light": "",
+            "normal": "",
+            "bold": "",
+            "bolder": ""
+        }
+    }
+}
