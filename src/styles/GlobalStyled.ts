@@ -49,6 +49,10 @@ const GlobalStyled = createGlobalStyle`
         border-collapse: collapse;
         border-spacing: 0;
     }
+
+    body { 
+        font-family: 'Barlow', sans-serif;
+    }
 `
 
 export default GlobalStyled;
