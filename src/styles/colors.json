@@ -6,8 +6,10 @@
     "blue500": "#3DBEFF",
     "blue700": "#19536b",
     "white": "#ffffff",
+    "neutral100": "#FFFBF8",
     "neutral200": "#a7abae",
     "neutral300": "#818498",
     "neutral400": "#5a636c",
-    "neutral500": "#23303e"
+    "neutral500": "#23303e",
+    "neutral600": "#202C39"
 }

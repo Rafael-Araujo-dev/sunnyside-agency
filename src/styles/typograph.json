@@ -1,7 +1,18 @@
 {
     "bodySmall" : {
         "fontSize": "1.125rem",
-        "lineHeight": "1.125rem",
+        "lineHeight": "1.8rem",
+        "fontWeight": {
+            "lighter": "",
+            "light": "",
+            "normal": "600",
+            "bold": "700",
+            "bolder": "900"
+        }
+    },
+    "bodyLarge" : {
+        "fontSize": "1.45rem",
+        "lineHeight": "2.2rem",
         "fontWeight": {
             "lighter": "",
             "light": "",
@@ -24,6 +35,28 @@
     "DisplayLarge": {
         "fontSize": "4rem",
         "lineHeight": "4.4rem",
+        "fontWeight": {
+            "lighter": "",
+            "light": "",
+            "normal": "600",
+            "bold": "700",
+            "bolder": "900"
+        }
+    },
+    "SubtitleSmall": {
+        "fontSize": "2.3rem",
+        "lineHeight": "2.8rem",
+        "fontWeight": {
+            "lighter": "",
+            "light": "",
+            "normal": "600",
+            "bold": "700",
+            "bolder": "900"
+        }
+    },
+    "SubtitleLarge": {
+        "fontSize": "3.2rem",
+        "lineHeight": "3.5rem",
         "fontWeight": {
             "lighter": "",
             "light": "",
