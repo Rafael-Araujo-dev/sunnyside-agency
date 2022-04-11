@@ -9,5 +9,27 @@
             "bold": "700",
             "bolder": "900"
         }
+    },
+    "DisplaySmall": {
+        "fontSize": "2.5rem",
+        "lineHeight": "3rem",
+        "fontWeight": {
+            "lighter": "",
+            "light": "",
+            "normal": "600",
+            "bold": "700",
+            "bolder": "900"
+        }
+    },
+    "DisplayLarge": {
+        "fontSize": "4rem",
+        "lineHeight": "4.4rem",
+        "fontWeight": {
+            "lighter": "",
+            "light": "",
+            "normal": "600",
+            "bold": "700",
+            "bolder": "900"
+        }
     }
 }
