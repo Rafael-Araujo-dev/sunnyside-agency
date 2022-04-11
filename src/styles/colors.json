@@ -1,3 +1,12 @@
 {
-    "primary500": ""
+    "primary": "#fe7867",
+    "secondary": "#fad400",
+    "cyan700": "#458c7e",
+    "cyan800": "#25564b",
+    "blue700": "#19536b",
+    "white": "#ffffff",
+    "neutral200": "#a7abae",
+    "neutral300": "#818498",
+    "neutral400": "#5a636c",
+    "neutral500": "#23303e"
 }
