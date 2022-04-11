@@ -1,13 +1,13 @@
 {
-    "paragraphSmall" : {
-        "fontSize": "",
-        "lineHeight": "",
+    "bodySmall" : {
+        "fontSize": "1.125rem",
+        "lineHeight": "1.125rem",
         "fontWeight": {
             "lighter": "",
             "light": "",
-            "normal": "",
-            "bold": "",
-            "bolder": ""
+            "normal": "600",
+            "bold": "700",
+            "bolder": "900"
         }
     }
 }
