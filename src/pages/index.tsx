@@ -34,7 +34,7 @@ const props = {
     },
   },
 };
-        
+
 const Home: NextPage = () => {
   return (
     <>
@@ -42,7 +42,7 @@ const Home: NextPage = () => {
         <title>Sunnyside - Agency</title>
         <meta name="description" content="" />
       </Head>
-      
+
       <HeroMain />
       {Object.values(props.textAndImages)
         .filter((item) => item)
@@ -50,6 +50,7 @@ const Home: NextPage = () => {
           return (
             <TextAndImage
               key={index}
+              id={"about-" + index}
               props={Object(item)}
               order={index % 2 == 0 ? -1 : 0}
             />

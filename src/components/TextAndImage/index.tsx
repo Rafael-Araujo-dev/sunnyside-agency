@@ -25,11 +25,12 @@ interface Properties {
     };
   };
   order?: number;
+  id?: string;
 }
 
-const TextAndImage: NextPage<Properties> = ({ props, order }) => {
+const TextAndImage: NextPage<Properties> = ({ props, order, id }) => {
   return (
-    <Container>
+    <Container id={id}>
       <ImageContainer
         bgDesk={props.image?.desk}
         bgMobile={props.image?.mobile}
