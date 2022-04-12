@@ -50,6 +50,7 @@ const Home: NextPage = () => {
         .map((item, index) => {
           return (
             <TextAndImage
+              key={index}
               props={Object(item)}
               order={index % 2 == 0 ? -1 : 0}
             />
