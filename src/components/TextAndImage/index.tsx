@@ -40,9 +40,11 @@ const TextAndImage: NextPage<Properties> = ({ props, order, id }) => {
         {props.text && (
           <TextContainer color={props.textColor}>{props.text}</TextContainer>
         )}
-        <Link href={props.link} color={props.linkColor}>
-          Learn More
-        </Link>
+        {props.link && (
+          <Link href={props.link} color={props.linkColor}>
+            Learn More
+          </Link>
+        )}
       </Content>
     </Container>
   );
