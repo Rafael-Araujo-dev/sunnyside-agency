@@ -5,6 +5,7 @@ import Head from "next/head";
 //Components
 import HeroMain from "@components/HeroMain";
 import TextAndImage from "@components/TextAndImage";
+import TextAndImageV2 from "@components/TextAndImageV2";
 
 const props = {
   textAndImages: {
@@ -33,6 +34,30 @@ const props = {
       linkColor: "#F8DAD3",
     },
   },
+  textAndImagesV2: {
+    section1: {
+      textAndImage1: {
+        image: {
+          desk: "./components/TextAndImages/image-graphic-design-desk.jpg",
+          mobile: "./components/TextAndImages/image-graphic-design-mobile.jpg",
+        },
+        title: "Graphic Design",
+        titleColor: "#25564b",
+        text: "Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients attention.",
+        textColor: "#25564b",
+      },
+      textAndImage2: {
+        image: {
+          desk: "./components/TextAndImages/image-photography-desk.jpg",
+          mobile: "./components/TextAndImages/image-photography-mobile.jpg",
+        },
+        title: "Photography",
+        titleColor: "#25564b",
+        text: "Increase your credibility by getting the most stunning, high-quality photos that improve your business image.",
+        textColor: "#25564b",
+      },
+    },
+  },
 };
 
 const Home: NextPage = () => {
@@ -51,10 +76,15 @@ const Home: NextPage = () => {
             <TextAndImage
               key={index}
               id={"about-" + index}
-              props={Object(item)}
+              props={item}
               order={index % 2 == 0 ? -1 : 0}
             />
           );
+        })}
+      {Object.values(props.textAndImagesV2)
+        .filter((section) => section)
+        .map((section, index) => {
+          return <TextAndImageV2 key={index} props={section} />;
         })}
     </>
   );

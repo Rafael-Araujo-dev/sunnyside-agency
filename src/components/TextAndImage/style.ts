@@ -49,7 +49,7 @@ export const Title = styled.h2<textProperties>`
     }
 `
 
-export const TextContainer = styled.p`
+export const TextContainer = styled.p<textProperties>`
     margin-bottom: 30px;
     color: ${props => props.color};
     font-size: ${typograph.bodySmall.fontSize};
