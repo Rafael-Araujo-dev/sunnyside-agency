@@ -20,6 +20,7 @@ const props = {
       textColor: "#818498",
       link: "#",
       linkColor: "#FFF3C0",
+      linkColorHover: "#F5D408",
     },
     textAndImage2: {
       image: {
@@ -32,6 +33,7 @@ const props = {
       textColor: "#818498",
       link: "#",
       linkColor: "#F8DAD3",
+      linkColorHover: "#FE7769",
     },
   },
   textAndImagesV2: {

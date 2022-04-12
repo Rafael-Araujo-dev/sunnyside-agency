@@ -31,6 +31,7 @@ export const Content = styled.div<ContentProperties>`
 
 interface textProperties { 
     color?: string;
+    colorHover?: string;
 }
 
 export const Title = styled.h2<textProperties>`
@@ -97,6 +98,7 @@ export const Link = styled.a<textProperties>`
     &:hover { 
         &:after {
             height: 100%;
+            background-color: ${props => props.colorHover};
         }
     }
 `
