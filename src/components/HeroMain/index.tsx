@@ -11,7 +11,7 @@ const HeroMain: NextPage = () => {
       <Wrapper>
         <Title>We Are Creatives</Title>
         <ArrowDown>
-          <Image src="./components/icon-arrow-down.svg" width="100%" alt="Arrow down"/>
+          <Image src="/components/icon-arrow-down.svg" width={36} height={114} alt="Arrow down"/>
         </ArrowDown>
       </Wrapper>
     </Container>
