@@ -1,5 +1,6 @@
 //Dependencies
 import type { NextPage } from "next";
+import Image from "next/image";
 
 //Styles
 import { Container, Wrapper, Title, ArrowDown, Bottom } from "./style";
@@ -10,7 +11,7 @@ const HeroMain: NextPage = () => {
       <Wrapper>
         <Title>We Are Creatives</Title>
         <ArrowDown>
-          <img src="./components/icon-arrow-down.svg" width="100%" />
+          <Image src="./components/icon-arrow-down.svg" width="100%" alt="Arrow down"/>
         </ArrowDown>
       </Wrapper>
     </Container>
