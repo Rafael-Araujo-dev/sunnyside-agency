@@ -47,6 +47,18 @@ export const Title = styled.h1`
 
 export const ArrowDown = styled.span`
     cursor: pointer;
+    animation: arrowDownHeroAnim 2s ease infinite alternate;
+    transition: all .5s;
+
+    @keyframes arrowDownHeroAnim {
+        from { 
+            transform: translateY(-10px);
+        }
+        to { 
+            transform: translateY(20px);
+        }
+    }
+    
 `
 
 export const Bottom = styled.div`
