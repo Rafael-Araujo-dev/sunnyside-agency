@@ -21,8 +21,8 @@ export const Content = styled.div<ContentProperties>`
     text-align: center;
 
     @media (min-width: 768px) {
-        width: calc(50vw - 20%);
-        padding: 10% 0%;
+        width: calc(50vw - 10%);
+        padding: 10% 5%;
         margin: auto;
         text-align: left;
         order: ${props => props.order};
@@ -74,7 +74,7 @@ export const Link = styled.a<textProperties>`
     font-weight: ${typograph.bodySmall.fontWeight.bolder};
     position: relative;
     z-index: 2;
-    &:after{
+    &:after {
         position: absolute;
         background-color: ${props => props.color};
         width: 100%;
@@ -85,6 +85,7 @@ export const Link = styled.a<textProperties>`
         bottom: 0;
         left: -10px;
         z-index: -1;
+        transition: all .2s ease;
     }
     @media (min-width: 768px) {
         font-size: ${typograph.bodyLarge.fontSize};
@@ -92,6 +93,12 @@ export const Link = styled.a<textProperties>`
         font-weight: ${typograph.bodyLarge.fontWeight.bolder};
         margin-left: 10px;
     }    
+
+    &:hover { 
+        &:after {
+            height: 100%;
+        }
+    }
 `
 
 interface ImageContainerProps {
