@@ -20,10 +20,9 @@ export const Wrapper = styled.div`
 
     @media (min-width: 768px) {
         background-image: url("./components/HeroMain/image-header-desk.jpg");
-        /* min-height: 45vh; */
-        /* padding: 180px 5% 35% 5%; */
-        height: calc(100vh - 250px);
+        min-height: calc(100vh - 250px);
         padding: 0 5% 250px 5%;
+        padding-top: 40px;
         justify-content: center;
     }
 `
