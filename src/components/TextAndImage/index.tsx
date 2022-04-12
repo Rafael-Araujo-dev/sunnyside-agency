@@ -19,6 +19,7 @@ interface Properties {
     textColor?: string;
     link?: string;
     linkColor?: string;
+    linkColorHover?: string;
     image?: {
       desk?: string;
       mobile?: string;
@@ -41,7 +42,7 @@ const TextAndImage: NextPage<Properties> = ({ props, order, id }) => {
           <TextContainer color={props.textColor}>{props.text}</TextContainer>
         )}
         {props.link && (
-          <Link href={props.link} color={props.linkColor}>
+          <Link href={props.link} color={props.linkColor} colorHover={props.linkColorHover}>
             Learn More
           </Link>
         )}

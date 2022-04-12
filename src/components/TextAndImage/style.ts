@@ -21,7 +21,7 @@ export const Content = styled.div<ContentProperties>`
     text-align: center;
 
     @media (min-width: 768px) {
-        width: calc(50vw - 10%);
+        width: calc(50% - 10%);
         padding: 10% 5%;
         margin: auto;
         text-align: left;
@@ -31,6 +31,7 @@ export const Content = styled.div<ContentProperties>`
 
 interface textProperties { 
     color?: string;
+    colorHover?: string;
 }
 
 export const Title = styled.h2<textProperties>`
@@ -97,6 +98,7 @@ export const Link = styled.a<textProperties>`
     &:hover { 
         &:after {
             height: 100%;
+            background-color: ${props => props.colorHover};
         }
     }
 `
@@ -114,7 +116,7 @@ export const ImageContainer = styled.div<ImageContainerProps>`
     background-position: center;
     @media (min-width: 768px) {
         background-image: url(${props => props.bgDesk ? props.bgDesk : props.bgMobile});
-        width: 50vw;
+        width: 50%;
         height: auto;
     }
 `
