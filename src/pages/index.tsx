@@ -63,19 +63,19 @@ const props = {
   },
   testimonials: {
     testimonials1: {
-      image: "/components/testimonial/image-emily.jpg",
+      image: "/components/Testimonial/image-emily.jpg",
       commentary: "We put our trust in Sunnyside and they delivered, making sure our needs were meet and deadlines were always hit.",
       author: "Emily R.",
       job: "Marketing Director",
     },
     testimonials2: {
-      image: "/components/testimonial/image-thomas.jpg",
+      image: "/components/Testimonial/image-thomas.jpg",
       commentary: "Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.",
       author: "Thomas S.",
       job: "Chief Operating Officer",
     },
     testimonials3: {
-      image: "/components/testimonial/image-jennie.jpg",
+      image: "/components/Testimonial/image-jennie.jpg",
       commentary: "Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!",
       author: "Jennie F.",
       job: "Business Owner",
