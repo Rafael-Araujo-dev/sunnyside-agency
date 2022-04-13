@@ -53,6 +53,10 @@ const GlobalStyled = createGlobalStyle`
     body { 
         font-family: 'Barlow', sans-serif;
     }
+
+    html { 
+        scroll-behavior: smooth;
+    }
 `
 
 export default GlobalStyled;
