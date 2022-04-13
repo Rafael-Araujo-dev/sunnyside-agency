@@ -3,6 +3,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 
 //Components
+import Navbar from "@components/Navbar";
 import HeroMain from "@components/HeroMain";
 import TextAndImage from "@components/TextAndImage";
 import TextAndImageV2 from "@components/TextAndImageV2";
@@ -21,7 +22,7 @@ const props = {
       titleColor: "#23303e",
       text: "We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.",
       textColor: "#818498",
-      link: "#",
+      link: "#about",
       linkColor: "#FFF3C0",
       linkColorHover: "#F5D408",
     },
@@ -34,7 +35,7 @@ const props = {
       titleColor: "#23303e",
       text: "Using a collaborative formula of designers, researches, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.",
       textColor: "#818498",
-      link: "#",
+      link: "#about-1",
       linkColor: "#F8DAD3",
       linkColorHover: "#FE7769",
     },
@@ -114,26 +115,37 @@ const Home: NextPage = () => {
         <meta name="description" content="" />
       </Head>
 
+      <Navbar />
+
       <HeroMain />
-      {Object.values(props.textAndImages)
-        .filter((item) => item)
-        .map((item, index) => {
-          return (
-            <TextAndImage
-              key={index}
-              id={"about-" + index}
-              props={item}
-              order={index % 2 == 0 ? -1 : 0}
-            />
-          );
-        })}
-      {Object.values(props.textAndImagesV2)
-        .filter((section) => section)
-        .map((section, index) => {
-          return <TextAndImageV2 key={index} props={section} />;
-        })}
-      <Testimonials props={props.testimonials} />
-      <GridImage props={props.gridImage} />
+
+      <main>
+        <section id="about">
+          {Object.values(props.textAndImages)
+            .filter((item) => item)
+            .map((item, index) => {
+              return (
+                <TextAndImage
+                  key={index}
+                  id={"about-" + index}
+                  props={item}
+                  order={index % 2 == 0 ? -1 : 0}
+                />
+              );
+            })}
+        </section>
+        <section id="services">
+          {Object.values(props.textAndImagesV2)
+            .filter((section) => section)
+            .map((section, index) => {
+              return <TextAndImageV2 key={index} props={section} />;
+            })}
+        </section>
+        <Testimonials props={props.testimonials} />
+        <section id="projects">
+          <GridImage props={props.gridImage} />
+        </section>
+      </main>
 
       <Footer />
     </>

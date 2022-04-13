@@ -19,7 +19,7 @@ interface ContentProperties {
 export const Content = styled.div<ContentProperties>`
     padding: 15% 10%;
     text-align: center;
-
+    max-width: 800px;
     @media (min-width: 768px) {
         width: calc(50% - 10%);
         padding: 10% 5%;
