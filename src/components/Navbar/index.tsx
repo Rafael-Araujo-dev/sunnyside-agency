@@ -42,7 +42,7 @@ const Navbar: NextPage = () => {
         </MenuToggler>
         <MenuMobile className={active ? "show" : "hide"}>
           <Items>
-            <Link href="#about-0" passHref>
+            <Link href="#about" passHref>
               About
             </Link>
             <Link href="#services" passHref>
