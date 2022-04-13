@@ -34,7 +34,7 @@ interface textProperties {
     colorHover?: string;
 }
 
-export const Title = styled.h2<textProperties>`
+export const Title = styled.h1<textProperties>`
     font-family: 'Fraunces';
     color: ${props => props.color};
     font-size: ${typograph.SubtitleSmall.fontSize};

@@ -4,10 +4,6 @@ import typograph from "@styles/typograph.json";
 
 
 export const Container = styled.section`
-    
-`
-
-export const Wrapper = styled.div`
     padding: 180px 5% 35% 5%;
     background-image: url("./components/HeroMain/image-header-mobile.jpg");
     background-position: center bottom;
@@ -24,7 +20,7 @@ export const Wrapper = styled.div`
         padding: 0 5% 250px 5%;
         padding-top: 40px;
         justify-content: center;
-    }
+    }    
 `
 
 export const Title = styled.h1`
@@ -59,7 +55,4 @@ export const ArrowDown = styled.span`
         }
     }
     
-`
-
-export const Bottom = styled.div`
 `

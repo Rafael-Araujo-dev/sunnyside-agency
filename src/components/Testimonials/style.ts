@@ -84,7 +84,7 @@ export const Info = styled.div`
     }
 `
 
-export const Author = styled.span`
+export const Author = styled.h5`
     font-family: 'Fraunces';
     color: ${colors.neutral600};
     font-size: ${typograph.bodySmall.fontSize};
@@ -98,7 +98,7 @@ export const Author = styled.span`
     }
 `
 
-export const Job = styled.span`
+export const Job = styled.h5`
     color: ${colors.neutral200};
     font-size: ${typograph.captionSmall.fontSize};
     font-weight: ${typograph.captionSmall.fontWeight.normal};

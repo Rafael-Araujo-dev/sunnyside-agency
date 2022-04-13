@@ -4,12 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 //Styles
-import { Container, Wrapper, Title, ArrowDown, Bottom } from "./style";
+import { Container, Title, ArrowDown } from "./style";
 
 const HeroMain: NextPage = () => {
   return (
     <Container>
-      <Wrapper>
         <Title>We Are Creatives</Title>
         <ArrowDown>
           <Link href="#about-0" passHref>
@@ -21,7 +20,6 @@ const HeroMain: NextPage = () => {
             />
           </Link>
         </ArrowDown>
-      </Wrapper>
     </Container>
   );
 };
