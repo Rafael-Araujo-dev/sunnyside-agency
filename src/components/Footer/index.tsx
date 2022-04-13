@@ -4,18 +4,20 @@ import Link from "next/link";
 import Image from "next/image";
 
 //Styles
-import { Container, Wrapper, Nav, Socials, Social } from "./style";
+import { Container, Wrapper, Nav, Socials, Social, Credits } from "./style";
 
 const Footer: NextPage = () => {
   return (
     <Container>
       <Wrapper>
-        <Image
-          src="/components/Footer/logo-dark.svg"
-          width={186}
-          height={36}
-          alt="Sunnyside logo"
-        />
+        <Link href="#home" passHref>
+          <Image
+            src="/components/Footer/logo-dark.svg"
+            width={186}
+            height={36}
+            alt="Sunnyside logo"
+          />
+        </Link>
         <Nav>
           <Link href="#about" passHref>
             About
@@ -66,6 +68,15 @@ const Footer: NextPage = () => {
           </Social>
         </Socials>
       </Wrapper>
+      <Credits>
+        Made with <span>&hearts;</span> by
+        <Link
+          href="https://www.linkedin.com/in/rafael-ribeiro-araujo/"
+          passHref
+        >
+          <a target="_blank">Rafael Araújo</a>
+        </Link>
+      </Credits>
     </Container>
   );
 };

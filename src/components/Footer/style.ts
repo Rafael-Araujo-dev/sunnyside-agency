@@ -4,14 +4,13 @@ import colors from "@styles/colors.json";
 import typograph from "@styles/typograph.json";
 
 export const Container = styled.footer`
-    padding: 100px 5%;
     background-color: ${colors.cyan500};
     text-align: center;
 `
 
 export const Wrapper = styled.div`
     max-width: 1440px;
-    width: 100%;
+    padding: 100px 5%;
     margin: auto;
 
     display: flex;
@@ -19,6 +18,8 @@ export const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     row-gap: 40px;
+
+    img { cursor: pointer; }
 `
 
 export const Nav = styled.nav`
@@ -73,4 +74,44 @@ export const Socials = styled.div`
 
 export const Social = styled.span`
 
+`
+
+export const Credits = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+    background-color: ${colors.cyan700};
+    color: ${colors.white};
+    padding: 1rem 5%;
+    font-size: ${typograph.captionSmall.fontSize};
+    font-weight: ${typograph.captionSmall.fontWeight.normal};
+    line-height: ${typograph.captionSmall.lineHeight};
+
+    span {
+        color: red;
+        font-size: 2rem;
+        animation: heartsAnim 1.2s ease-in-out infinite alternate;
+    }
+
+    @keyframes heartsAnim {
+        from {
+            transform: scale(1);
+        }
+        to {
+            transform: scale(1.2);
+        }
+    }
+    
+    a {
+        color: ${colors.white};
+        text-decoration: none;
+        transition: all .2s;
+    }
+
+    a:hover {
+        color: rgba(255,255,255,0.75);
+        text-decoration: underline;
+    }
+    
 `
