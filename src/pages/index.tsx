@@ -7,6 +7,7 @@ import HeroMain from "@components/HeroMain";
 import TextAndImage from "@components/TextAndImage";
 import TextAndImageV2 from "@components/TextAndImageV2";
 import Testimonials from "@components/Testimonials";
+import GridImage from "@components/GridImage";
 
 const props = {
   textAndImages: {
@@ -80,6 +81,24 @@ const props = {
       author: "Jennie F.",
       job: "Business Owner",
     },
+  },
+  gridImage: {
+    image1: {
+      desk: "./components/GridImage/image-gallery-milkbottles-desk.jpg",
+      mobile: "./components/GridImage/image-gallery-milkbottles-mobile.jpg"
+    },
+    image2: {
+      desk: "./components/GridImage/image-gallery-orange-desk.jpg",
+      mobile: "./components/GridImage/image-gallery-orange-mobile.jpg"
+    },
+    image3: {
+      desk: "./components/GridImage/image-gallery-cone-desk.jpg",
+      mobile: "./components/GridImage/image-gallery-cone-mobile.jpg"
+    },
+    image4: {
+      desk: "./components/GridImage/image-gallery-sugarcubes-desk.jpg",
+      mobile: "./components/GridImage/image-gallery-sugar-cubes-mobile.jpg"
+    },
   }
 };
 
@@ -111,7 +130,8 @@ const Home: NextPage = () => {
           return <TextAndImageV2 key={index} props={section} />;
         })
       }
-      <Testimonials props={props.testimonials}/>
+      <Testimonials props={props.testimonials} />
+      <GridImage props={props.gridImage} />
     </>
   );
 };
