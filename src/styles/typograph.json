@@ -1,4 +1,26 @@
 {
+    "captionSmall" : {
+        "fontSize": "1rem",
+        "lineHeight": "1.5rem",
+        "fontWeight": {
+            "lighter": "",
+            "light": "",
+            "normal": "600",
+            "bold": "700",
+            "bolder": "900"
+        }
+    },
+    "captionLarge" : {
+        "fontSize": "1.2rem",
+        "lineHeight": "1.8rem",
+        "fontWeight": {
+            "lighter": "",
+            "light": "",
+            "normal": "600",
+            "bold": "700",
+            "bolder": "900"
+        }
+    },
     "bodySmall" : {
         "fontSize": "1.125rem",
         "lineHeight": "1.8rem",
