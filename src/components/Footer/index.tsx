@@ -27,7 +27,7 @@ const Footer: NextPage = () => {
             Projects
           </Link>
         </Nav>
-        <Socials>
+        <Socials id="contact">
           <Social>
             <Link href="#facebook" passHref>
               <Image
