@@ -1,8 +1,10 @@
 {
     "primary": "#fe7867",
     "secondary": "#fad400",
+    "cyan500": "#90D4C5",
     "cyan700": "#458c7e",
-    "cyan800": "#25564b",
+    "cyan800": "#327B6A",
+    "cyan900": "#25564b",
     "blue500": "#3DBEFF",
     "blue700": "#19536b",
     "white": "#ffffff",
