@@ -18,7 +18,7 @@ export const Container = styled.section`
         background-image: url("./components/HeroMain/image-header-desk.jpg");
         min-height: calc(100vh - 250px);
         padding: 0 5% 250px 5%;
-        padding-top: 40px;
+        padding-top: 100px;
         justify-content: center;
     }    
 `

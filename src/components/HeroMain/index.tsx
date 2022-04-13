@@ -8,10 +8,10 @@ import { Container, Title, ArrowDown } from "./style";
 
 const HeroMain: NextPage = () => {
   return (
-    <Container>
+    <Container id="home">
       <Title>We Are Creatives</Title>
       <ArrowDown>
-        <Link href="#about-0" passHref>
+        <Link href="#about" passHref>
           <Image
             src="/components/icon-arrow-down.svg"
             width={36}

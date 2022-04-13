@@ -5,6 +5,11 @@ import typograph from "@styles/typograph.json";
 
 export const Container = styled.section`
     background-color: ${colors.neutral100};
+`
+
+export const Wrapper = styled.div`
+    max-width: 1440px;
+    margin: auto;
     padding: 80px 5%;
 
     @media (min-width: 768px) {

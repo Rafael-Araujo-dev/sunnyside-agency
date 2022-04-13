@@ -4,18 +4,20 @@ import Link from "next/link";
 import Image from "next/image";
 
 //Styles
-import { Container, Wrapper, Nav, Socials, Social } from "./style";
+import { Container, Wrapper, Nav, Socials, Social, Credits } from "./style";
 
 const Footer: NextPage = () => {
   return (
     <Container>
       <Wrapper>
-        <Image
-          src="/components/Footer/logo-dark.svg"
-          width={186}
-          height={36}
-          alt="Sunnyside logo"
-        />
+        <Link href="#home" passHref>
+          <Image
+            src="/components/Footer/logo-dark.svg"
+            width={186}
+            height={36}
+            alt="Sunnyside logo"
+          />
+        </Link>
         <Nav>
           <Link href="#about" passHref>
             About
@@ -27,13 +29,14 @@ const Footer: NextPage = () => {
             Projects
           </Link>
         </Nav>
-        <Socials>
+        <Socials id="contact">
           <Social>
             <Link href="#facebook" passHref>
               <Image
                 src="/components/Footer/icon-facebook.svg"
                 width={20}
                 height={20}
+                alt="Facebook logo"
               />
             </Link>
           </Social>
@@ -43,6 +46,7 @@ const Footer: NextPage = () => {
                 src="/components/Footer/icon-instagram.svg"
                 width={20}
                 height={20}
+                alt="Instagram logo"
               />
             </Link>
           </Social>
@@ -52,6 +56,7 @@ const Footer: NextPage = () => {
                 src="/components/Footer/icon-twitter.svg"
                 width={20}
                 height={20}
+                alt="Twitter logo"
               />
             </Link>
           </Social>
@@ -61,11 +66,21 @@ const Footer: NextPage = () => {
                 src="/components/Footer/icon-pinterest.svg"
                 width={20}
                 height={20}
+                alt="Pinterest logo"
               />
             </Link>
           </Social>
         </Socials>
       </Wrapper>
+      <Credits>
+        Made with <span>&hearts;</span> by
+        <Link
+          href="https://www.linkedin.com/in/rafael-ribeiro-araujo/"
+          passHref
+        >
+          <a target="_blank">Rafael Araújo</a>
+        </Link>
+      </Credits>
     </Container>
   );
 };
