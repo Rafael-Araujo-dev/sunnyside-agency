@@ -3,6 +3,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 
 //Components
+import Navbar from "@components/Navbar";
 import HeroMain from "@components/HeroMain";
 import TextAndImage from "@components/TextAndImage";
 import TextAndImageV2 from "@components/TextAndImageV2";
@@ -113,6 +114,8 @@ const Home: NextPage = () => {
         <title>Sunnyside - Agency</title>
         <meta name="description" content="" />
       </Head>
+
+      <Navbar />
 
       <HeroMain />
       {Object.values(props.textAndImages)
