@@ -36,6 +36,7 @@ const Footer: NextPage = () => {
                 src="/components/Footer/icon-facebook.svg"
                 width={20}
                 height={20}
+                alt="Facebook logo"
               />
             </Link>
           </Social>
@@ -45,6 +46,7 @@ const Footer: NextPage = () => {
                 src="/components/Footer/icon-instagram.svg"
                 width={20}
                 height={20}
+                alt="Instagram logo"
               />
             </Link>
           </Social>
@@ -54,6 +56,7 @@ const Footer: NextPage = () => {
                 src="/components/Footer/icon-twitter.svg"
                 width={20}
                 height={20}
+                alt="Twitter logo"
               />
             </Link>
           </Social>
@@ -63,6 +66,7 @@ const Footer: NextPage = () => {
                 src="/components/Footer/icon-pinterest.svg"
                 width={20}
                 height={20}
+                alt="Pinterest logo"
               />
             </Link>
           </Social>

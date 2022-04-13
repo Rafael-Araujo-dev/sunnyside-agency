@@ -21,7 +21,12 @@ const Navbar: NextPage = () => {
     <Container>
       <Wrapper>
         <Link href="#home" passHref>
-          <Image src="/components/Navbar/logo.svg" width={124} height={24} />
+          <Image
+            src="/components/Navbar/logo.svg"
+            width={124}
+            height={24}
+            alt="Sunnyside logo"
+          />
         </Link>
         <MenuToggler
           onClick={() => {
@@ -32,6 +37,7 @@ const Navbar: NextPage = () => {
             src="/components/Navbar/icon-hamburger.svg"
             width={24}
             height={18}
+            alt="Menu icon"
           />
         </MenuToggler>
         <MenuMobile className={active ? "show" : "hide"}>
