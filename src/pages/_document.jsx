@@ -46,6 +46,7 @@ class MyDocument extends Document {
           <link href={"https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;900&display=swap"} rel="stylesheet" />
 
           <meta name="description" content="" />
+          <meta name="theme-color" content="#3DBEFF" />
 
           <link rel="shortcut icon" href="/favicon-32x32.png" />
         </Head>

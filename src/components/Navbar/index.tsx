@@ -18,7 +18,7 @@ const Navbar: NextPage = () => {
   const [active, setActive] = useState(false);
 
   return (
-    <Container>
+    <Container role="navigation">
       <Wrapper>
         <Link href="#home" passHref>
           <Image
@@ -26,6 +26,7 @@ const Navbar: NextPage = () => {
             width={124}
             height={24}
             alt="Sunnyside logo"
+            role="img"
           />
         </Link>
         <MenuToggler
@@ -38,11 +39,13 @@ const Navbar: NextPage = () => {
             width={24}
             height={18}
             alt="Menu icon"
+            role="button"
+            aria-label="controls menu display"
           />
         </MenuToggler>
         <MenuMobile className={active ? "show" : "hide"}>
-          <Items>
-            <Link href="#about-0" passHref>
+          <Items role="menu">
+            <Link href="#about" passHref>
               About
             </Link>
             <Link href="#services" passHref>
@@ -57,7 +60,7 @@ const Navbar: NextPage = () => {
           </Items>
         </MenuMobile>
         <Desk>
-          <Items>
+          <Items role="menu">
             <Link href="#about-0" passHref>
               About
             </Link>
