@@ -20,7 +20,9 @@ export const Wrapper = styled.div`
     img { cursor: pointer; }
 `
 
-export const MenuToggler = styled.div`
+export const MenuToggler = styled.button`
+    background: transparent;
+    border: none;   
     @media (min-width: 768px) {
         display: none;
     }
@@ -55,7 +57,7 @@ export const Desk = styled.div`
     }
 
 `
-export const Items = styled.div`
+export const Items = styled.nav`
     display: flex;
     @media (max-width: 767px) {    
         flex-direction: column;
