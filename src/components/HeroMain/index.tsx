@@ -9,7 +9,7 @@ import { Container, Title, ArrowDown } from "./style";
 const HeroMain: NextPage = () => {
   return (
     <Container id="home">
-      <Title>We Are Creatives</Title>
+      <Title role="title">We Are Creatives</Title>
       <ArrowDown>
         <Link href="#about" passHref>
           <Image
@@ -17,6 +17,8 @@ const HeroMain: NextPage = () => {
             width={36}
             height={114}
             alt="Arrow down"
+            aria-label="goes to about session about"
+            role="link"
           />
         </Link>
       </ArrowDown>
