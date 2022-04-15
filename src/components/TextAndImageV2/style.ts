@@ -6,7 +6,7 @@ import typograph from "@styles/typograph.json";
 export const Container = styled.section`
     display: flex;
     flex-direction: column;
-
+    overflow: hidden;
     @media (min-width: 768px) {
         flex-direction: row;
     }

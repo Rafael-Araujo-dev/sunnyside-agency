@@ -7,7 +7,7 @@ export const Container = styled.section`
     display: flex;
     flex-direction: column;
     background-color: ${colors.neutral100};
-
+    overflow-x: hidden;
     @media (min-width: 768px) {
         flex-direction: row;
     }

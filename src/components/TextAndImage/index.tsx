@@ -37,14 +37,15 @@ const TextAndImage: NextPage<Properties> = ({ props, order, id }) => {
       <ImageContainer
         bgDesk={props.image?.desk}
         bgMobile={props.image?.mobile}
+        data-aos={order==-1?"fade-left":"fade-right"}
       />
       <Content order={order}>
         <Title color={props.titleColor} data-aos="fade-in">{props.title}</Title>
         {props.text && (
-          <TextContainer color={props.textColor}>{props.text}</TextContainer>
+          <TextContainer color={props.textColor} data-aos={order==0?"fade-left":"fade-right"}>{props.text}</TextContainer>
         )}
         {props.link && (
-          <Link href={props.link} color={props.linkColor} colorHover={props.linkColorHover}>
+          <Link href={props.link} color={props.linkColor} colorHover={props.linkColorHover} data-aos="fade-in" data-aos-delay="250">
             Learn More
           </Link>
         )}
