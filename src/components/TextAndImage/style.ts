@@ -1,13 +1,13 @@
 import styled from "styled-components";
 import colors from "@styles/colors.json";
 import typograph from "@styles/typograph.json";
-
+import * as Anim from "@styles/AnimationsStyledComponents";
 
 export const Container = styled.section`
     display: flex;
     flex-direction: column;
     background-color: ${colors.neutral100};
-
+    overflow-x: hidden;
     @media (min-width: 768px) {
         flex-direction: row;
     }

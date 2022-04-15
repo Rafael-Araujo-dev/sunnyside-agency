@@ -20,6 +20,6 @@
       "@styles/*": ["src/styles/*"],
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/context/Width.jsx"],
   "exclude": ["node_modules"]
 }

@@ -1,6 +1,6 @@
 //Dependencies
 import type { NextPage } from "next";
-
+import { useState, useEffect } from "react";
 //Styles
 import { Container, Column, Content, Title, TextContainer } from "./style";
 
@@ -22,6 +22,7 @@ interface Properties {
 }
 
 const TextAndImageV2: NextPage<Properties> = ({ props }) => {
+
   return (
     <Container>
       {Object.values(props)
@@ -32,10 +33,11 @@ const TextAndImageV2: NextPage<Properties> = ({ props }) => {
               key={index}
               bgDesk={item.image?.desk}
               bgMobile={item.image?.mobile}
+              data-aos={index==1?"fade-left":"fade-right"}
             >
               <Content>
-                <Title color={item.titleColor}>{item.title}</Title>
-                <TextContainer color={item.textColor}>
+                <Title color={item.titleColor} data-aos="fade-in">{item.title}</Title>
+                <TextContainer color={item.textColor} data-aos="fade-up">
                   {item.text}
                 </TextContainer>
               </Content>
