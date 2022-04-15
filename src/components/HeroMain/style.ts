@@ -1,10 +1,12 @@
 import styled from "styled-components";
 import colors from "@styles/colors.json";
 import typograph from "@styles/typograph.json";
+import * as Anim from "@styles/AnimationsStyledComponents";
 
 
 export const Container = styled.section`
     padding: 180px 5% 35% 5%;
+    background-color: #3EBFFF;
     background-image: url("./components/HeroMain/image-header-mobile.jpg");
     background-position: center bottom;
     background-size: cover;
@@ -33,7 +35,8 @@ export const Title = styled.h1`
     font-weight: ${typograph.DisplaySmall.fontWeight.bold};
     text-transform: uppercase;
     max-width: 400px;
-
+    opacity: 0;
+    animation: ${Anim.FadeInDown("-100%")} 1.5s .5s forwards;
     @media (min-width: 768px) {
         max-width: 100%;
         font-size: ${typograph.DisplayLarge.fontSize};
@@ -43,16 +46,8 @@ export const Title = styled.h1`
 
 export const ArrowDown = styled.span`
     cursor: pointer;
-    animation: arrowDownHeroAnim 2s ease infinite alternate;
+    opacity: 0;
+    animation: ${Anim.FadeIn} .5s 2s forwards, ${Anim.BouncingUpAndDown("-10px","20px")} 2s 2s ease infinite alternate;
     transition: all .5s;
-
-    @keyframes arrowDownHeroAnim {
-        from { 
-            transform: translateY(-10px);
-        }
-        to { 
-            transform: translateY(20px);
-        }
-    }
     
 `

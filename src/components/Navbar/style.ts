@@ -2,6 +2,7 @@
 import styled from "styled-components";
 import colors from "@styles/colors.json";
 import typograph from "@styles/typograph.json";
+import * as Anim from "@styles/AnimationsStyledComponents";
 
 export const Container = styled.nav`
     position: fixed;
@@ -12,12 +13,15 @@ export const Container = styled.nav`
 
 export const Wrapper = styled.div`
     max-width: 1440px;
-    padding: 20px 5%;
+    padding: 10px 5%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     img { cursor: pointer; }
+    img:nth-of-type(1) {
+        animation: ${Anim.FadeIn} 2s;
+    }
 `
 
 export const MenuToggler = styled.button`
@@ -70,6 +74,12 @@ export const Items = styled.nav`
     @media (min-width: 768px) {
         flex-direction: row;
         column-gap: 20px;
+
+        a { opacity: 0; }
+        a:nth-child(1) { animation: ${Anim.FadeIn} .5s .25s forwards; }
+        a:nth-child(2) { animation: ${Anim.FadeIn} .5s .5s forwards; }
+        a:nth-child(3) { animation: ${Anim.FadeIn} .5s .75s forwards; }
+        a:nth-child(4) { animation: ${Anim.FadeIn} .5s 1s forwards; }
     }
 `
 

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import colors from "@styles/colors.json";
 import typograph from "@styles/typograph.json";
-
+import * as Anim from "@styles/AnimationsStyledComponents";
 
 export const Container = styled.section`
     display: flex;
@@ -48,6 +48,8 @@ export const Title = styled.h1<textProperties>`
         font-weight: ${typograph.SubtitleLarge.fontWeight.bolder};
         margin-bottom: 60px;
     }
+
+    animation: ${Anim.FadeIn} .2s;
 `
 
 export const TextContainer = styled.p<textProperties>`
