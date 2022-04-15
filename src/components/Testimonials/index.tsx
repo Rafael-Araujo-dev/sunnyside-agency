@@ -1,6 +1,7 @@
 //Dependencies
 import { NextPage } from "next";
 import Image from "next/image";
+import { useEffect } from "react";
 
 //Styles
 import {
@@ -27,16 +28,30 @@ interface Properties {
 }
 
 const Testimonials: NextPage<Properties> = ({ props }) => {
+  useEffect(()=> {
+    window.addEventListener('resize', ()=> {
+        window.innerWidth,
+        window.innerHeight
+    })
+  }, [])
+
+  let viewport = {}
+  
   return (
     <Container>
       <Wrapper>
-        <Title>Client Testimonials</Title>
+        <Title data-aos="fade-in">Client Testimonials</Title>
         <Items>
           {Object.values(props)
             .filter((item) => item)
             .map((item, index) => {
               return (
-                <Item key={index}>
+                <Item key={index} data-aos={
+                  index==0 && "fade-right" ||
+                  index==1 && "fade-up" ||
+                  index==2 && "fade-left"
+                }
+                >
                   {item.image && (
                     <Image
                       src={item.image}

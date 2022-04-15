@@ -5,6 +5,7 @@ import typograph from "@styles/typograph.json";
 
 export const Container = styled.section`
     background-color: ${colors.neutral100};
+    overflow-x: hidden;
 `
 
 export const Wrapper = styled.div`
