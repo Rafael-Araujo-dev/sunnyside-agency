@@ -29,7 +29,9 @@ interface Properties {
   id?: string;
 }
 
+
 const TextAndImage: NextPage<Properties> = ({ props, order, id }) => {
+
   return (
     <Container id={id}>
       <ImageContainer
@@ -37,7 +39,7 @@ const TextAndImage: NextPage<Properties> = ({ props, order, id }) => {
         bgMobile={props.image?.mobile}
       />
       <Content order={order}>
-        <Title color={props.titleColor}>{props.title}</Title>
+        <Title color={props.titleColor} data-aos="fade-in">{props.title}</Title>
         {props.text && (
           <TextContainer color={props.textColor}>{props.text}</TextContainer>
         )}

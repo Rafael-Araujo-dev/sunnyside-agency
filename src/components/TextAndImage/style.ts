@@ -48,8 +48,6 @@ export const Title = styled.h1<textProperties>`
         font-weight: ${typograph.SubtitleLarge.fontWeight.bolder};
         margin-bottom: 60px;
     }
-
-    animation: ${Anim.FadeIn} .2s;
 `
 
 export const TextContainer = styled.p<textProperties>`
